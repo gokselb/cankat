@@ -7,6 +7,7 @@ import { HomeComponent } from "./home/home.component";
 import { MainLayoutComponent } from "./../deyep.core/public_api";
 import { AddNewComponent } from "./addnew/addnew.component";
 import { FormsModule } from "@angular/forms";
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 
 export const routes : Route[] = [{
@@ -31,7 +32,8 @@ export const routes : Route[] = [{
     BrowserModule,
     RouterModule.forChild(routes),
     FormsModule, 
-    DeyepCoreModule
+    DeyepCoreModule,
+    NgbModule
   ],
   declarations: [
     HomeComponent,
